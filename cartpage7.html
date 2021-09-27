@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Cart Page -YOUR STORE</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">  
+</head>
+<body>
+<div class="header">
+<div class="container">
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.php"class="btn"><img src="logo.jpg" width="100px">
+        </a>
+    
+    </div>
+    
+    <nav>
+    <ul id="MenuItems">
+      <li><a href="index.php"><button class="b">Home</button></a></li>
+      <li><a href="products.html"><button class="b">Products</button></a></li>
+      <li><a href="clothes.html"><button class="b">Clothes</button></a></li>
+      <li><a href="accessories.html"><button class="b">Accessories</button></a></li>
+      <li><a href="account.php"><button class="b">Account</button></a></li>
+         </ul>
+    </nav>
+    <div class="cart">
+    <a href="empty.html"><img src="carts.jpg" width="30px" height="30px"></a>
+  </div>
+  <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+</div>
+</div>
+
+<!---------cart item details---->
+<div class="small-container cart-page">
+  <table>
+      <tr>
+  <th> Product</th>
+  <th> Quantity  </th>
+  <th> Price</th>
+      </tr>
+      <tr>
+  <td>
+   <div class="cart-info">
+   <img src="d_7.jpg" >
+ <div>
+   <p> Off white party dress</p>
+   <small>$750</small>
+   <br>
+    <a href="empty.html"button class="b" type="button">Remove</a>
+    </div>
+    </div>
+    </td>
+    <td><input type="number" value="1"></td>
+   <td>$750</td>
+   </tr>
+  </table>
+  <div class="total-price">
+      <table>
+          <tr>
+              <td>
+                  SubTotal</td>
+              <td>$750</td>
+          </tr>
+          <tr>
+              <td>Tax</td>
+              <td>$80</td>
+              </tr>
+              <tr>
+                  <td>Total</td>
+                  <td>$830</td>
+              </tr>
+          
+      </table>
+  </div>
+  </div>
+
+ <!--------footer------->
+ <div class="footer">
+ <div class="container">
+ <div class= "row">
+   <div class="footer-col-1">
+     <h3>Download Our App</h3>
+     <p>Download App for Android and IOS Mobile Phone</p>
+     <div class="app-logo">
+       <img src="ps1.png">
+       <img src="ps2.png">
+     
+     </div>
+   </div>
+     <div class="footer-col-2">
+       
+ <p>Our purpose is to sustainably make the royal look accessible to many.</p>
+       </div>
+       <div class="footer-col-3">
+         <h3>Useful Links</h3>
+         <ul>
+           <li>Coupons</li>
+           <li>Blog Post</li>
+           <li>Return Policy
+           </li>
+           <li>Join Affiliate</li>
+         </ul>
+         </div>
+       <div class="footer-col-4">
+         <h3>Follow Us</h3>
+         <ul>
+           <li>Facebook</li>
+           <li>Twitter</li>
+           <li>Instagram </li>
+           <li>Youtube</li>
+         </ul>
+         </div>
+         </div>
+         
+         <p class="copyright">Copyright 2020-your store</p>
+       </hr>
+         </div>
+         </div>
+         </div>
+         
+         <!----------js for toggle menu------>
+         <script>
+           var MenuItems = document.getElementById("MenuItems")
+           MenuItems.style.maxHeight="0px";
+           function menutoggle(){
+             if(MenuItems.style.maxHeight == "0px")
+             {
+               MenuItems.style.maxHeight ="200px";
+ 
+             }
+             else{
+               MenuItems.style.maxHeight ="0px";
+             }
+           }
+         </script>
+         
+       </body>
+    </html>
