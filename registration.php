@@ -1,8 +1,8 @@
 <?php
 header('location:account.php ');
 session_start();
-$con = mysqli_connect('remotemysql.com','ssUJ3ToNCc','uFozkCqXeR') or die(mysql_error());
-mysqli_select_db($con,'ssUJ3ToNCc') or die(mysql_error());
+$con = mysqli_connect('remotemysql.com','ssUJ3ToNCc','uFozkCqXeR') or die();
+mysqli_select_db($con,'ssUJ3ToNCc') or die();
 $name = $_POST['user'];
 $pass = $_POST['password'] ;
 $s= "select * from usertable where name='$name' ";
