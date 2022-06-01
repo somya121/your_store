@@ -1,9 +1,4 @@
-<?php
-if(isset($_POST['submit'])){
-    $username = $POST[''];
-    $password = $POST[''];
-}
-?>
+
 <html lang="en">
 <head>
 <title>Account-YOUR STORE</title>
