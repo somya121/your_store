@@ -1,8 +1,8 @@
 <?php
 
 session_start();
-$con = mysqli_connect('remotemysql.com','QKap1xCpnR','AZcJXR1uP9') or die(mysqli_error($con));
-mysqli_select_db($con,'QKap1xCpnR') or die(mysqli_error($con));
+$con = mysqli_connect('remotemysql.com','0fA8qXSpM7','A4wKoqbc91') or die(mysqli_error($con));
+mysqli_select_db($con,'0fA8qXSpM7') or die(mysqli_error($con));
 $name = $_POST['user'];
 $pass = $_POST['password'] ;
 $s= "select * from usertable where name='$name'&& password = '$pass' ";
