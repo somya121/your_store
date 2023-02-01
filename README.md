@@ -13,7 +13,7 @@ To learn
 and create a responsive website.
 
 ## Login Demo
-![](readme_images/login_demo.jpg)
+![](https://github.com/somya121/your_store/blob/main/readme_images/demo.mp4)
 
 ## The Project is deployed using heroku
 🔗 Link 
